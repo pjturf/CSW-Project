@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Header and Footer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        p{
+            color:rgb(246, 243, 243);
+            text-decoration:none;
+        }
+        img:hover{
+            color:rgb(80, 97, 249);
+            text-decoration: none;
+        }
+        h2{
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+        }
+        a{
+            color:black;
+            text-decoration: none;
+
+        }
+        a:hover{
+            color:rgb(68, 44, 228);
+            text-decoration: none;
+
+        }
+        li a:hover{
+            color:blueviolet;
+        }
+        .nav-item-right {
+            margin-left: 30px; 
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <!-- Brand -->
+        <h2 class="text-white">EV</h2>
+      
+        <!-- Links -->
+        <ul class="navbar-nav justify-content-center">
+            <li class="nav-item nav-item-right">
+                <a class="nav-link text-white" href="https://en.wikipedia.org/wiki/Electric_vehicle" target="_blank">About</a>
+            </li>
+            <li class="nav-item dropdown nav-item-right">
+                <a class="nav-link dropdown-toggle text-white" id="navbardrop" data-toggle="dropdown" style="cursor: pointer;">
+                    Brands
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://www.tesla.com/" target="_blank">
+                        <img src="https://cdn.globalcarsbrands.com/wp-content/uploads/2022/01/tesla-logo.jpg" alt="Tesla Logo" height="30px" width="50px"> Tesla
+                    </a>
+                    <a class="dropdown-item" href="https://www.byd.com/in" target="_blank">
+                        <img src="https://g.foolcdn.com/art/companylogos/mark/BYDDY.png" alt="BYD logo" height="30px" width="50px"> BYD
+                    </a>
+                    <a class="dropdown-item" href="https://www.bmw.in/en/index.html" target="_blank">
+                         <img src="https://tse1.mm.bing.net/th?id=OIP.HMpeXdgaON8j3B4i6uUKRwHaEK&pid=Api&P=0&h=180" alt="BMW logo" height="30px" width="50px">   BMW</a>
+                    <a class="dropdown-item" href="https://www.mercedes-benz.co.in/" target="_blank">
+                         <img src="https://tse3.mm.bing.net/th?id=OIP._ENF8kyAS5g-mrmHhnVbogHaEK&pid=Api&P=0&h=180" alt="Mercedes logo" height="30px" width="50px">Mercedes</a>
+                    <a class="dropdown-item" href="https://www.audi.in/en/" target="_blank">
+                         <img src="https://tse2.mm.bing.net/th?id=OIP.Cta-CMAXxwKOpr8iKEYZjwHaEE&pid=Api&P=0&h=180" alt="Audi logo" height="30px" width="50px">Audi</a>
+                    <a class="dropdown-item" href="https://www.kia.com/in/home.html" target="_blank">
+                         <img src="https://tse4.mm.bing.net/th?id=OIP.DRC4Q-bAheD9V2DMi3UP0QHaCb&pid=Api&P=0&h=180" alt="Kia logo" height="20px" width="50px">KIA</a>
+                </div>
+            </li>
+        </ul>
+        
+
+    <!-- Search Bar -->
+        <form class="form-inline ml-auto">
+          <input class="form-control mr-sm-2 " id="searchInput" type="text" placeholder="Search for Cars">
+          <button class="btn btn-success" id="searchButton" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="mt-5">
+        <h2>Top Electric Vehicles</h2><br>
+        <!-- Carousel -->
+        <div id="vehicleCarousel" class=" container carousel slide bg-dark" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#vehicleCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#vehicleCarousel" data-slide-to="1"></li>
+                <li data-target="#vehicleCarousel" data-slide-to="2"></li>
+            </ul>
+
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6 text-center mt-5">
+                            <a href="https://www.bmw.in/en/index.html" target="_blank">
+                                <img src="https://wallpapercave.com/wp/wp5045894.jpg" alt="BMW i5" class="img-fluid" height="200px" width="400px">
+                                <p>BMW i5</p>
+                            </a>
+                        </div>
+                        <div class="col-md-6 text-center mt-5">
+                            <a href="https://www.rolls-roycemotorcars.com/en_GB/showroom/spectre.html" target="_blank">
+                                <img src="https://www.xtrafondos.com/wallpapers/rolls-royce-spectre-2024-10977.jpg" alt="Rolls-Royce Spectre" class="img-fluid" height="200px" width="400px">
+                                <p>Rolls-Royce Spectre</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6 text-center mt-5">
+                            <a href="https://www.mercedes-benz.co.in/passengercars/technology/e-mobility.html" target="_blank">
+                                <img src="https://tse1.mm.bing.net/th?id=OIP.YBKJGhXmw-mAck-SEg8OkQHaEK&pid=Api&P=0&h=180" alt="mercedes-benz" class="img-fluid" height="200px" width="400px">
+                                <p>Mercedes Benz</p>
+                            </a>
+                        </div>
+                        <div class="col-md-6 text-center mt-5">
+                            <a href="https://www.mg.co.uk/new-cars/mg4-ev" target="_blank">
+                                <img src="https://tse1.mm.bing.net/th?id=OIP.iK5xlLma6GMq4D-kqYi9zAHaEK&pid=Api&P=0&h=180" alt="mg4" class="img-fluid" height="200px" width="400px">
+                                <p >MG4</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6 text-center mt-5">
+                            <a href="https://www.porsche.com/middle-east/india/models/taycan/taycan-models/taycan/" target="_blank">
+                                <img src="https://cdn.motor1.com/images/mgl/91v3l/s1/2020-porsche-taycan-4s.jpg" alt="porsche taycan" class="img-fluid" height="200px" width="400px">
+                                <p>Porsche Taycan</p>
+                            </a>
+                        </div>
+                        <div class="col-md-6 text-center mt-5">
+                            <a href="https://lucidmotors.com/air/" target="_blank">
+                                <img src="https://tse2.mm.bing.net/th?id=OIP.F1LfyGGr48YXgxlzvDqmqwHaD4&pid=Api&P=0&h=180" alt="lucid air" class="img-fluid" height="300px" width="400px">
+                                <p>Lucid Air</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#vehicleCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon "></span>
+            </a>
+            <a class="carousel-control-next" href="#vehicleCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <br><br><br>
+<!--Table-->
+    <table class="table table-bordered">
+        <h2>Popular EVs All Over the World</h2><br>
+        <tr>
+            <th><a href="https://www.lotuscars.com/en-US/eletre" target="_blank"><img src="https://images.hgmsites.net/hug/lotus-eletre_100889597_h.jpg" alt="car9" height="200px"width="400px"><br>Lotus Eletre</a></th>
+            <th><a href="https://www.byd.com/eu/electric-cars/seal" target="_blank"><img src="https://evdb.nz/wp-content/uploads/2023/06/byd-seal.jpg" alt="car10" height="200px"width="400px"><br>BYD Seal</a></th>
+            <th><a href="https://ev.tatamotors.com/curvv/ev.html" target="_blank"><img src="https://gaadiwaadi.com/wp-content/uploads/2022/04/Tata-Curvv-top-front-angle-1536x946.jpg"alt="car11" height="200px"width="400px"><br>Tata Curvv EV</a></th>
+        </tr>
+        <tr>
+            <th><a href="https://ev.tatamotors.com/nexon/ev.html" target="_blank"><img src="https://wallpaperaccess.com/full/6128959.jpg"alt="car12" height="200px"width="400px"><br>Tata Nexon EV</a></th>
+            <th><a href="https://www.byd.com/in/car/atto3" target="_blank"><img src="https://tse2.mm.bing.net/th?id=OIP.J1nWBy9ilIr7m2lskgVJBQHaEK&pid=Api&P=0&h=180"alt="car13" height="200px"width="400px"><br>BYD Atto 3</a></th>
+            <th><a href="https://www.kia.com/in/our-vehicles/ev6/showroom.html" target="_blank"><img src="https://tse1.mm.bing.net/th?id=OIP.cUtIDx1BrM4L5rEYx-JT3gHaEK&pid=Api&P=0&h=180" alt="car16" height="200px"width="400px"><br>KIA EV6</a></th>
+        </tr>
+    </table>
+
+<br><br><br>
+    <!-- Footer -->
+    <footer>
+        <div class=" bg-dark text-center">
+            <p class="text-white p-3 mb-0">&copy; 2023 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+         $(document).ready(function() {
+            // Dynamic placeholder
+            const placeholderTexts = ["Search for Brands", "Find Your Dream EV"];
+            let placeholderIndex = 0;
+            setInterval(() => {
+                placeholderIndex = (placeholderIndex + 1) % placeholderTexts.length;
+                $('#searchInput').attr('placeholder', placeholderTexts[placeholderIndex]);
+            }, 3000);
+
+            // Search functionality
+            const cars = ["Tesla", "BYD", "Mahindra", "Kia", "Nexon", "Lucid", "Rolls Royce", "BMW"];
+
+            $('#searchButton').click(function() {
+                const searchTerm = $('#searchInput').val().trim().toLowerCase();
+                if (searchTerm) {
+                    const results = cars.filter(car => car.toLowerCase().includes(searchTerm));
+                    if (results.length > 0) {
+                        alert(Found: ${results.join(', ')});
+                    } else {
+                        alert("No results found.");
+                    }
+                } else {
+                    alert("Please enter a search term.");
+                }
+            });
+        });
+</script>
+
+</body>
+</html>
